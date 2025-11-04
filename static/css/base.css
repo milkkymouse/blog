@@ -3,7 +3,7 @@
 
 
 body {
-  background-color: lightblue;
+  background-image: linear-gradient(to bottom);
   font-family: verdana;
   font-size: 18px;
 }

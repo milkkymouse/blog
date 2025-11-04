@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+#CSRF_TRUSTED_ORIGINS = ['https://localhost:8000&#39;']
 
 # Application definition
 
@@ -128,3 +129,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Login redirect
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
+

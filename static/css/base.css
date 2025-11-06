@@ -3,7 +3,6 @@
 
 
 body {
-  background-image: linear-gradient(to bottom right, #000814, #003459);
   font-family: verdana;
 }
 
@@ -22,13 +21,87 @@ a {
 }
 
 h1 {
-  color: #e5e5e5;
+  color: black;
   font-size: 5em
 }
 
-button {
-  color: #edf2f4;
+/* Navbar styles */
+.navbar {
+    background-color: #222831; /* Background color for navbar */
+    position: sticky; /* Sticky positioning */
+    display: block; /* Block display */
+    top: 0; /* Sticks to the top */
+    z-index: 1001; /* Layering order above other elements */
+    width: 100%; /* Full width */
 }
+
+/* Navbar list styles */
+.navbar ul {
+    list-style-type: none; /* No bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    overflow: hidden; /* Hides overflow */
+    background-color: #222831; /* Background color for list */
+    width: 100%; /* Full width */
+}
+
+/* Navbar list item styles */
+.navbar li {
+    float: left; /* Align items to the left */
+}
+
+/* Navbar links and dropdown button styles */
+.navbar li a, .dropbtn {
+    display: inline-block; /* Inline block for links */
+    color: white; /* Link text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Padding for links */
+    text-decoration: none; /* No underline on links */
+}
+
+/* Navbar link hover effect */
+.navbar li a:hover, .dropdown:hover .dropbtn {
+    background-color: #00ADB5; /* Change background color on hover */
+}
+
+
+/* Dropdown styles */
+.navbar li.dropdown {
+    display: inline-block; /* Inline block for dropdown */
+}
+
+/* Dropdown button cursor style */
+.dropbtn {
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned absolutely */
+    background-color: #222831; /* Background color */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1; /* Layering order */
+}
+
+/* Dropdown link styles */
+.dropdown-content a {
+    color: white; /* Link text color */
+    padding: 12px 16px; /* Padding for dropdown links */
+    display: block; /* Block display */
+    text-align: left; /* Align text to the left */
+}
+
+/* Dropdown visibility on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+/* Dropdown link hover effect */
+.dropdown-content a:hover {
+    background-color: #00ADB5; /* Change background color on hover */
+}
+
 
 .post-entry {
   margin-bottom: 2rem;

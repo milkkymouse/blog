@@ -8,17 +8,33 @@
  </head>
 
  <body>
+   <!-- Navigation bar container -->
+   <div class="navbar">
+      <ul>
+         <!-- Navigation links -->
+         <li><a href="home.html">Home</a></li>
+         <!-- Dropdown menu aligned to the right -->
+         <li class="dropdown">
+               <a class="dropbtn">Post</a>
+               <!-- Dropdown content with additional navigation links -->
+               <div class="dropdown-content">
+                  <a href="post_new.html">New Post</a>
+                  <a href="post_detail.html">View Post</a>
+               </div>
+         </li>
+      </ul>
+   </div>
    <div>
      <header>
       <div class="center">
          <h1>Sample Blog Website</h1>
       </div>
      </header>
-
+   </div>
    <!-- <div>
       <h1><a href="{% url 'home' %}"> My blog</a></h1>
    </div>
-   -->
+
    <div>
       <a href="{% url 'post_new' %}">add new blog post</a>
    </div>
@@ -35,6 +51,7 @@
 
     {% block content %}
     {% endblock content %}
+   -->
  </div>
  </body>
 

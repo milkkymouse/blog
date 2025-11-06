@@ -94,7 +94,8 @@ h1 {
 
 /* Dropdown visibility on hover */
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown content on hover */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
 }
 
 /* Dropdown link hover effect */
